@@ -2,7 +2,7 @@ export const profile = {
   name: "Saarthak Singh",
   firstName: "Saarthak",
   email: "saarthaksingh5663@gmail.com",
-  linkedin: "https://linkedin.com/in/saarthaksingh-a52998270",
+  linkedin: "https://www.linkedin.com/in/saarthak-singh-a52998270/",
   github: "https://github.com",
   location: "Noida, Uttar Pradesh, India",
   locationShort: "Noida / Delhi NCR, IN",
