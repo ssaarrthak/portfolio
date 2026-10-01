@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { profile } from "../data/profile";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -34,8 +33,8 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-primary shadow-[0_1px_8px_rgba(0,0,0,0.12)]">
-      <div className="h-20 max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between">
-        <a href="#about" className="flex items-center gap-space-sm group text-left">
+      <div className="h-20 max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop grid grid-cols-[1fr_auto_1fr] items-center">
+        <a href="#about" className="flex items-center gap-space-sm group text-left justify-self-start">
           <span className="font-headline-sm text-headline-sm text-on-primary tracking-tight font-semibold group-hover:text-secondary-fixed transition-colors">
             SS <span className="text-on-primary-container font-normal">/ Saarthak Singh</span>
           </span>
@@ -55,29 +54,13 @@ export default function Header() {
             </a>
           ))}
         </nav>
-        <div className="flex items-center gap-space-md">
-          <div className="hidden md:flex items-center gap-space-xs px-space-sm py-space-2xs bg-primary-container rounded-full border border-outline-variant/20">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
-            </span>
-            <span className="font-label-code text-label-code text-on-primary-container uppercase tracking-wide">
-              Available for Internships & Projects
-            </span>
-          </div>
+        <div className="flex items-center gap-space-md justify-self-end">
           <a
             href="#contact"
-            className="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-full bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-all transform hover:-translate-y-px"
+            className="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-all transform hover:-translate-y-px whitespace-nowrap"
           >
             Get in Touch
           </a>
-          <div className="pl-space-2xs flex items-center">
-            <img
-              alt="Profile"
-              className="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/40"
-              src={profile.avatar}
-            />
-          </div>
           <button
             type="button"
             aria-label="Toggle navigation menu"
@@ -108,7 +91,7 @@ export default function Header() {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="sm:hidden inline-flex items-center justify-center px-space-md py-space-xs rounded-full bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold w-fit"
+            className="sm:hidden inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold w-fit whitespace-nowrap"
           >
             Get in Touch
           </a>

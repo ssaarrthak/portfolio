@@ -10,12 +10,6 @@ export default function ContextBar() {
             BCA (2024–2027) • Guru Gobind Singh Indraprastha University
           </span>
         </div>
-        <div className="hidden sm:flex items-center gap-space-md text-on-surface-variant">
-          <span className="flex items-center gap-space-3xs text-secondary font-medium">
-            <span className="material-symbols-outlined text-sm">verified</span> Verified Dual Competence: QA + Creative
-            Video
-          </span>
-        </div>
       </div>
     </div>
   );
