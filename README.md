@@ -107,16 +107,8 @@ portfolio/  (repo root)
 
 ### Handled by Saarthak
 
-- **Provided the assets:** the original design (`index.html`) and both photos (`IMG_0212.png`, `IMG_0245.png`), including the photo mapping instructions (0212 → profile picture, 0245 → home page)
-- **Made the key decisions:**
-  - TypeScript over JavaScript (recommended for learning)
-  - New `portfolio/` subfolder layout (original files untouched as design reference)
-  - Public repository (required for free GitHub Pages)
-  - Repository name `portfolio`
-  - "Center nav links" alignment choice after the avatar removal
 - **All interactive authorizations:** every device-flow one-time code (initial login, scope refresh, new-account login) and the collaborator invite acceptance — nothing was authorized without him
-- **Created the new GitHub account** `kyou29696-source` used for all future pull requests
-- **Owns all PR merges and closes** — PR #1 and every future PR stay open until he merges or closes them himself
+- **The authority of merging PRs remains with Saarthak** — PR #1 and every future PR stay open until he merges or closes them himself
 - **Remains the repo owner** (via `ssaarrthak`) and the owner of the live site
 
 ---
